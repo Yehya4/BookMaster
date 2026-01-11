@@ -22,37 +22,9 @@ BookMaster est une application de gestion de bibliothèque moderne et intuitive 
 
 ## Prérequis
 
-Avant de commencer, assurez-vous d'avoir installé :
-
 *   [Java JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) ou supérieur.
 *   [Maven](https://maven.apache.org/) (pour la gestion du projet).
 *   [MySQL Server](https://dev.mysql.com/downloads/mysql/) (optionnel si le mode CSV est utilisé, mais recommandé).
-
-## Installation
-
-1.  **Cloner le dépôt** :
-    ```bash
-    git clone https://github.com/votre-utilisateur/BookMaster.git
-    cd BookMaster
-    ```
-
-2.  **Configurer la Base de Données** :
-    *   Assurez-vous que votre serveur MySQL est en cours d'exécution.
-    *   L'application utilise un initialiseur de base de données (`DBInitializer`) qui créera automatiquement les tables nécessaires au premier lancement.
-    *   Vérifiez le fichier `src/main/resources/db.properties` (s'il existe) ou la classe `DBUtil` pour configurer vos identifiants de connexion MySQL (URL, utilisateur, mot de passe).
-
-3.  **Compiler le projet** :
-    ```bash
-    mvn clean install
-    ```
-
-## Lancement de l'Application
-
-Pour lancer l'application, utilisez la commande Maven suivante :
-
-```bash
-mvn javafx:run
-```
 
 ## Connexion Administrateur
 
@@ -70,7 +42,3 @@ Un compte administrateur par défaut est créé automatiquement au premier lance
     *   `services` : Logique métier.
     *   `utils` : Utilitaires (Connexion DB, Export CSV).
 *   `src/main/resources` : Ressources (Vues FXML, CSS, Images).
-
-## Auteur
-
-Développé par [Votre Nom/Équipe].
